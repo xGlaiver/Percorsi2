@@ -683,6 +683,12 @@ body {
   display: flex;
 }
 
+.singleCourses .singleCourses__top h3 {
+  min-width: 300px;
+  font-weight: 900;
+  color: #33FFD9;
+}
+
 .singleCourses .singleCourses__top .line-singleCourses {
   border-top: 2px solid #33FFD9;
   position: relative;
@@ -693,7 +699,218 @@ body {
 
 .singleCourses .singleCourses__inside {
   width: 1321px;
-  margin: 65px 16.20% 0 15%;
+  margin: 16px 16.20% 0 0;
+}
+
+.singleCourses .singleCourses__inside > p {
+  font-weight: 400;
+}
+
+.singleCourses .singleCourses__inside .singleCourses__choose {
+  margin-top: 32px;
+  padding-left: 10px;
+  padding-bottom: 60px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 247px 247px 247px 247px 247px;
+      grid-template-columns: 247px 247px 247px 247px 247px;
+  -webkit-column-gap: 16px;
+          column-gap: 16px;
+  overflow-x: scroll;
+}
+
+.singleCourses .singleCourses__inside .singleCourses__choose .singleCourses__group {
+  position: relative;
+}
+
+.singleCourses .singleCourses__inside .singleCourses__choose .singleCourses__group .cssCourse, .singleCourses .singleCourses__inside .singleCourses__choose .singleCourses__group .javascript, .singleCourses .singleCourses__inside .singleCourses__choose .singleCourses__group .react, .singleCourses .singleCourses__inside .singleCourses__choose .singleCourses__group .reactNative {
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 160px;
+  border-radius: 16px;
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+}
+
+.singleCourses .singleCourses__inside .singleCourses__choose .singleCourses__group .cssCourse hgroup, .singleCourses .singleCourses__inside .singleCourses__choose .singleCourses__group .javascript hgroup, .singleCourses .singleCourses__inside .singleCourses__choose .singleCourses__group .react hgroup, .singleCourses .singleCourses__inside .singleCourses__choose .singleCourses__group .reactNative hgroup {
+  padding: 27px 32px 0 32px;
+}
+
+.singleCourses .singleCourses__inside .singleCourses__choose .singleCourses__group .cssCourse hgroup h6, .singleCourses .singleCourses__inside .singleCourses__choose .singleCourses__group .javascript hgroup h6, .singleCourses .singleCourses__inside .singleCourses__choose .singleCourses__group .react hgroup h6, .singleCourses .singleCourses__inside .singleCourses__choose .singleCourses__group .reactNative hgroup h6 {
+  font-weight: 500;
+}
+
+.singleCourses .singleCourses__inside .singleCourses__choose .singleCourses__group .cssCourse hgroup p, .singleCourses .singleCourses__inside .singleCourses__choose .singleCourses__group .javascript hgroup p, .singleCourses .singleCourses__inside .singleCourses__choose .singleCourses__group .react hgroup p, .singleCourses .singleCourses__inside .singleCourses__choose .singleCourses__group .reactNative hgroup p {
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.singleCourses .singleCourses__inside .singleCourses__choose .singleCourses__group .cssCourse .icon, .singleCourses .singleCourses__inside .singleCourses__choose .singleCourses__group .javascript .icon, .singleCourses .singleCourses__inside .singleCourses__choose .singleCourses__group .react .icon, .singleCourses .singleCourses__inside .singleCourses__choose .singleCourses__group .reactNative .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin-right: 20px;
+}
+
+.singleCourses .singleCourses__inside .singleCourses__choose .singleCourses__group .cssCourse .icon img, .singleCourses .singleCourses__inside .singleCourses__choose .singleCourses__group .javascript .icon img, .singleCourses .singleCourses__inside .singleCourses__choose .singleCourses__group .react .icon img, .singleCourses .singleCourses__inside .singleCourses__choose .singleCourses__group .reactNative .icon img {
+  margin-right: 5px;
+}
+
+.singleCourses .singleCourses__inside .singleCourses__choose .singleCourses__group .cssCourse hgroup h6 {
+  color: #33A9DC;
+}
+
+.singleCourses .singleCourses__inside .singleCourses__choose .singleCourses__group .javascript hgroup h6 {
+  color: #F7DF1E;
+}
+
+.singleCourses .singleCourses__inside .singleCourses__choose .singleCourses__group .react hgroup h6 {
+  color: #00D8FF;
+}
+
+.singleCourses .singleCourses__inside .singleCourses__choose .singleCourses__group .reactNative hgroup h6 {
+  color: #4003CA;
+}
+
+.singleCourses .singleCourses__inside .singleCourses__choose .singleCourses__group > img {
+  bottom: -50px;
+  left: 20px;
+  position: absolute;
+  z-index: -10;
+}
+
+.singleCourses .singleCourses__inside .singleCourses__choose .singleCourses__group .cssImage {
+  bottom: -40px;
+  left: -40px;
+  position: absolute;
+  z-index: -10;
+}
+
+/* FreeCourses */
+.freeCourses {
+  margin: 65px 0 0 15%;
+}
+
+.freeCourses .freeCourses__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.freeCourses .freeCourses__top h3 {
+  min-width: 300px;
+  font-weight: 900;
+  color: #4003CA;
+}
+
+.freeCourses .freeCourses__top .line-freeCourses {
+  border-top: 2px solid #4003CA;
+  position: relative;
+  width: 100%;
+  margin-left: 5%;
+  top: 35px;
+}
+
+.freeCourses .freeCourses__inside {
+  width: 1321px;
+  margin: 16px 16.20% 0 0;
+}
+
+.freeCourses .freeCourses__inside > p {
+  font-weight: 400;
+}
+
+.freeCourses .freeCourses__inside .freeCourses__choose {
+  margin-top: 32px;
+  padding-left: 10px;
+  padding-bottom: 60px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 247px 247px 247px 247px 247px;
+      grid-template-columns: 247px 247px 247px 247px 247px;
+  -webkit-column-gap: 16px;
+          column-gap: 16px;
+  overflow-x: scroll;
+}
+
+.freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group {
+  position: relative;
+}
+
+.freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .htmlCssFree, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .javascriptFree, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .reactFree, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .reactNativeFree, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .gitFree {
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 160px;
+  border-radius: 16px;
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+}
+
+.freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .htmlCssFree hgroup, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .javascriptFree hgroup, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .reactFree hgroup, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .reactNativeFree hgroup, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .gitFree hgroup {
+  padding: 27px 32px 0 32px;
+}
+
+.freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .htmlCssFree hgroup h6, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .javascriptFree hgroup h6, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .reactFree hgroup h6, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .reactNativeFree hgroup h6, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .gitFree hgroup h6 {
+  font-weight: 500;
+}
+
+.freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .htmlCssFree hgroup p, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .javascriptFree hgroup p, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .reactFree hgroup p, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .reactNativeFree hgroup p, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .gitFree hgroup p {
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .htmlCssFree .icon, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .javascriptFree .icon, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .reactFree .icon, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .reactNativeFree .icon, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .gitFree .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-right: 20px;
+  position: absolute;
+  right: 0;
+  bottom: 23px;
+}
+
+.freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .htmlCssFree .icon img, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .javascriptFree .icon img, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .reactFree .icon img, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .reactNativeFree .icon img, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .gitFree .icon img {
+  margin-right: 5px;
+}
+
+.freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .cssCourse hgroup h6 {
+  color: #33A9DC;
+}
+
+.freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .javascript hgroup h6 {
+  color: #F7DF1E;
+}
+
+.freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .react hgroup h6 {
+  color: #00D8FF;
+}
+
+.freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .reactNative hgroup h6 {
+  color: #4003CA;
+}
+
+.freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group > img {
+  bottom: -50px;
+  left: 20px;
+  position: absolute;
+  z-index: -10;
+}
+
+.freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .htmlImage {
+  bottom: -40px;
+  left: -40px;
+  position: absolute;
+  z-index: -9;
 }
 
 /* Footer */

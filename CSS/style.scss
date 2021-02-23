@@ -518,6 +518,12 @@ body {
     .singleCourses__top {
         display: flex;
 
+        h3 {
+            min-width: 300px;
+            font-weight: 900;
+            color: $teal;
+        }
+
         .line-singleCourses {
             border-top: 2px solid $teal;
             position: relative;
@@ -529,7 +535,228 @@ body {
 
     .singleCourses__inside {
         width: 1321px;
-        margin: 65px 16.20% 0 15%;
+        margin: 16px 16.20% 0 0;
+
+        >p {
+            font-weight: 400;
+        }
+
+        .singleCourses__choose {
+            margin-top: 32px;
+            padding-left: 10px;
+            padding-bottom: 60px;
+            display: grid;
+            grid-template-columns: 247px 247px 247px 247px 247px;
+            column-gap: 16px;
+            overflow-x: scroll;
+
+            .singleCourses__group {
+                position: relative;
+
+                .cssCourse, .javascript, .react, .reactNative {
+                    background-color: rgba($color: #fff, $alpha: 0.3);
+                    height: 160px;
+                    border-radius: 16px;
+                    backdrop-filter: blur(12px);  
+                    
+                    hgroup {
+                        padding: 27px 32px 0 32px;
+
+                        h6 {
+                            font-weight: 500;
+                        }
+
+                        p {
+                            margin-top: 8px;
+                            font-weight: 500;
+                            font-size: 12px;
+                            color: rgba($color: #000, $alpha: 0.6);
+                        }
+                    }
+
+                    .icon {
+                        display: flex;
+                        flex-direction: row-reverse;
+                        margin-right: 20px;
+                        img {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+
+                .cssCourse {
+                    hgroup {
+                        h6 {
+                            color: #33A9DC;
+                        }
+                    }
+                }
+
+                .javascript {
+                    hgroup {
+                        h6 {
+                            color: #F7DF1E;
+                        }
+                    }
+                }
+
+                .react {
+                    hgroup {
+                        h6 {
+                            color: #00D8FF;
+                        }
+                    }
+                }
+
+                .reactNative {
+                    hgroup {
+                        h6 {
+                            color: $purple;
+                        }
+                    }
+                }
+
+                >img {
+                    bottom: -50px;
+                    left: 20px;
+                    position: absolute;
+                    z-index: -10;
+                }
+
+                .cssImage {
+                    bottom: -40px;
+                    left: -40px;
+                    position: absolute;
+                    z-index: -10;
+                }
+            }
+        }
+    }
+}
+
+/* FreeCourses */
+.freeCourses {
+    margin: 65px 0 0 15%;
+
+    .freeCourses__top {
+        display: flex;
+
+        h3 {
+            min-width: 300px;
+            font-weight: 900;
+            color: $purple;
+        }
+
+        .line-freeCourses {
+            border-top: 2px solid $purple;
+            position: relative;
+            width: 100%;
+            margin-left: 5%;
+            top: 35px;
+        }
+    }
+
+    .freeCourses__inside {
+        width: 1321px;
+        margin: 16px 16.20% 0 0;
+
+        >p {
+            font-weight: 400;
+        }
+
+        .freeCourses__choose {
+            margin-top: 32px;
+            padding-left: 10px;
+            padding-bottom: 60px;
+            display: grid;
+            grid-template-columns: 247px 247px 247px 247px 247px;
+            column-gap: 16px;
+            overflow-x: scroll;
+
+            .freeCourses__group {
+                position: relative;
+
+                .htmlCssFree, .javascriptFree, .reactFree, .reactNativeFree, .gitFree {
+                    background-color: rgba($color: #fff, $alpha: 0.3);
+                    height: 160px;
+                    border-radius: 16px;
+                    backdrop-filter: blur(12px);  
+                    
+                    hgroup {
+                        padding: 27px 32px 0 32px;
+
+                        h6 {
+                            font-weight: 500;
+                        }
+
+                        p {
+                            margin-top: 8px;
+                            font-weight: 500;
+                            font-size: 12px;
+                            color: rgba($color: #000, $alpha: 0.6);
+                        }
+                    }
+
+                    .icon {
+                        display: flex;
+                        flex-direction: row;
+                        margin-right: 20px;
+                        position: absolute;
+                        right: 0;
+                        bottom: 23px;
+                        img {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+
+                .cssCourse {
+                    hgroup {
+                        h6 {
+                            color: #33A9DC;
+                        }
+                    }
+                }
+
+                .javascript {
+                    hgroup {
+                        h6 {
+                            color: #F7DF1E;
+                        }
+                    }
+                }
+
+                .react {
+                    hgroup {
+                        h6 {
+                            color: #00D8FF;
+                        }
+                    }
+                }
+
+                .reactNative {
+                    hgroup {
+                        h6 {
+                            color: $purple;
+                        }
+                    }
+                }
+
+                >img {
+                    bottom: -50px;
+                    left: 20px;
+                    position: absolute;
+                    z-index: -10;
+                }
+
+                .htmlImage {
+                    bottom: -40px;
+                    left: -40px;
+                    position: absolute;
+                    z-index: -9;
+                }
+            }
+        }
     }
 }
 
