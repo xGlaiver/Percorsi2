@@ -528,15 +528,64 @@ body {
   margin: 65px 16.20% 0 15%;
 }
 
+@media only screen and (max-width: 1620px) {
+  .path {
+    width: 1021px;
+  }
+}
+
+@media only screen and (max-width: 1268px) {
+  .path {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 1171px) {
+  .path {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 804px) {
+  .path {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    min-width: 331px;
+    width: 55%;
+    min-height: 745px;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .path hgroup h3 {
   color: #33FFD9;
   font-weight: 900;
+}
+
+@media only screen and (max-width: 804px) {
+  .path hgroup h3 {
+    font-size: 32px;
+  }
 }
 
 .path hgroup p {
   margin-top: 16px;
   width: 577px;
   font-weight: 400;
+}
+
+@media only screen and (max-width: 804px) {
+  .path hgroup p {
+    font-size: 15px;
+    width: 100%;
+  }
 }
 
 .path .path_choose {
@@ -548,7 +597,12 @@ body {
       grid-template-columns: 360px 360px 360px;
   -webkit-column-gap: 80px;
           column-gap: 80px;
-  overflow-x: scroll;
+}
+
+@media only screen and (max-width: 1620px) {
+  .path .path_choose {
+    overflow-x: scroll;
+  }
 }
 
 .path .path_choose .frontendPath, .path .path_choose .javaPath, .path .path_choose .nodePath {
@@ -689,17 +743,57 @@ body {
   color: #33FFD9;
 }
 
+@media only screen and (max-width: 804px) {
+  .singleCourses .singleCourses__top h3 {
+    font-size: 36px;
+  }
+}
+
 .singleCourses .singleCourses__top .line-singleCourses {
   border-top: 2px solid #33FFD9;
   position: relative;
   width: 100%;
-  margin-left: 5%;
-  top: 35px;
+  margin-left: 1%;
+  top: 25px;
 }
 
 .singleCourses .singleCourses__inside {
   width: 1321px;
   margin: 16px 16.20% 0 0;
+}
+
+@media only screen and (max-width: 1620px) {
+  .singleCourses .singleCourses__inside {
+    width: 1021px;
+  }
+}
+
+@media only screen and (max-width: 1268px) {
+  .singleCourses .singleCourses__inside {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 1171px) {
+  .singleCourses .singleCourses__inside {
+    width: 700px;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 804px) {
+  .singleCourses .singleCourses__inside {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-width: 331px;
+    width: 80%;
+    max-height: 100%;
+    margin-left: 20px;
+    margin-right: auto;
+  }
 }
 
 .singleCourses .singleCourses__inside > p {
@@ -716,7 +810,12 @@ body {
       grid-template-columns: 247px 247px 247px 247px 247px;
   -webkit-column-gap: 16px;
           column-gap: 16px;
-  overflow-x: scroll;
+}
+
+@media only screen and (max-width: 1620px) {
+  .singleCourses .singleCourses__inside .singleCourses__choose {
+    overflow-x: scroll;
+  }
 }
 
 .singleCourses .singleCourses__inside .singleCourses__choose .singleCourses__group {
@@ -808,17 +907,57 @@ body {
   color: #4003CA;
 }
 
+@media only screen and (max-width: 804px) {
+  .freeCourses .freeCourses__top h3 {
+    font-size: 36px;
+  }
+}
+
 .freeCourses .freeCourses__top .line-freeCourses {
   border-top: 2px solid #4003CA;
   position: relative;
   width: 100%;
-  margin-left: 5%;
-  top: 35px;
+  margin-left: 1%;
+  top: 25px;
 }
 
 .freeCourses .freeCourses__inside {
   width: 1321px;
   margin: 16px 16.20% 0 0;
+}
+
+@media only screen and (max-width: 1620px) {
+  .freeCourses .freeCourses__inside {
+    width: 1021px;
+  }
+}
+
+@media only screen and (max-width: 1268px) {
+  .freeCourses .freeCourses__inside {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 1171px) {
+  .freeCourses .freeCourses__inside {
+    width: 700px;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 804px) {
+  .freeCourses .freeCourses__inside {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-width: 331px;
+    width: 80%;
+    max-height: 100%;
+    margin-left: 20px;
+    margin-right: auto;
+  }
 }
 
 .freeCourses .freeCourses__inside > p {
@@ -835,7 +974,12 @@ body {
       grid-template-columns: 247px 247px 247px 247px 247px;
   -webkit-column-gap: 16px;
           column-gap: 16px;
-  overflow-x: scroll;
+}
+
+@media only screen and (max-width: 1620px) {
+  .freeCourses .freeCourses__inside .freeCourses__choose {
+    overflow-x: scroll;
+  }
 }
 
 .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group {
@@ -1122,7 +1266,7 @@ body {
   height: 338px;
   background-color: #4003CA;
   font-weight: 700;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 @media only screen and (max-width: 1620px) {
