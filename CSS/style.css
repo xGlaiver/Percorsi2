@@ -745,6 +745,7 @@ body {
 
 @media only screen and (max-width: 804px) {
   .singleCourses .singleCourses__top h3 {
+    min-width: 230px;
     font-size: 36px;
   }
 }
@@ -909,6 +910,7 @@ body {
 
 @media only screen and (max-width: 804px) {
   .freeCourses .freeCourses__top h3 {
+    min-width: 230px;
     font-size: 36px;
   }
 }

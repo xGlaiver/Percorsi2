@@ -561,6 +561,7 @@ body {
             color: $teal;
 
             @include mq804 {
+                min-width: 230px;
                 font-size: 36px;
             }
         }
@@ -714,6 +715,7 @@ body {
             color: $purple;
 
             @include mq804 {
+                min-width: 230px;
                 font-size: 36px;
             }
         }
