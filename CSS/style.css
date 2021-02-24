@@ -557,7 +557,7 @@ body {
             flex-direction: column-reverse;
     min-width: 331px;
     width: 55%;
-    min-height: 745px;
+    min-height: 100%;
     max-height: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -597,12 +597,6 @@ body {
       grid-template-columns: 360px 360px 360px;
   -webkit-column-gap: 80px;
           column-gap: 80px;
-}
-
-@media only screen and (max-width: 1620px) {
-  .path .path_choose {
-    overflow-x: scroll;
-  }
 }
 
 .path .path_choose .frontendPath, .path .path_choose .javaPath, .path .path_choose .nodePath {
@@ -669,6 +663,15 @@ body {
   cursor: pointer;
 }
 
+.path .path_choose .frontendPath .button-icon .frontendIcon, .path .path_choose .javaPath .button-icon .frontendIcon, .path .path_choose .nodePath .button-icon .frontendIcon {
+  position: relative;
+  cursor: pointer;
+}
+
+.path .path_choose .frontendPath .button-icon:hover .frontendIcon, .path .path_choose .javaPath .button-icon:hover .frontendIcon, .path .path_choose .nodePath .button-icon:hover .frontendIcon {
+  bottom: 10px;
+}
+
 .path .path_choose .frontendPath .button-icon button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -718,12 +721,6 @@ body {
   right: -75px;
   position: absolute;
   z-index: -10;
-}
-
-.path .video {
-  width: 1319px;
-  height: 742px;
-  background-color: #fff;
 }
 
 /* SingleCourses */
@@ -1002,13 +999,7 @@ body {
 
 .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .htmlCssFree hgroup h6, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .javascriptFree hgroup h6, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .reactFree hgroup h6, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .reactNativeFree hgroup h6, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .gitFree hgroup h6 {
   font-weight: 500;
-}
-
-.freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .htmlCssFree hgroup p, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .javascriptFree hgroup p, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .reactFree hgroup p, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .reactNativeFree hgroup p, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .gitFree hgroup p {
-  margin-top: 8px;
-  font-weight: 500;
-  font-size: 12px;
-  color: rgba(0, 0, 0, 0.6);
+  color: black;
 }
 
 .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .htmlCssFree .icon, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .javascriptFree .icon, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .reactFree .icon, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .reactNativeFree .icon, .freeCourses .freeCourses__inside .freeCourses__choose .freeCourses__group .gitFree .icon {

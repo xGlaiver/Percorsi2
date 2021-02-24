@@ -402,7 +402,7 @@ body {
         flex-direction: column-reverse;
         min-width: 331px;
         width: 55%;
-        min-height: 745px;
+        min-height: 100%;
         max-height: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -437,9 +437,9 @@ body {
         grid-template-columns: 360px 360px 360px;
         column-gap: 80px;
         
-        @include mq1620 {
-            overflow-x: scroll;
-        }
+        // @include mq1620 {
+        //     overflow-x: scroll;
+        // }
 
         .frontendPath, .javaPath, .nodePath {
             background-color: rgba($color: #fff, $alpha: 0.3);
@@ -488,7 +488,18 @@ body {
                     font-size: 15px;
                     outline: 0;
                     border: none;
+                    cursor: pointer;               
+                }
+
+                .frontendIcon {
+                    position: relative;
                     cursor: pointer;
+                }
+
+                &:hover {
+                    .frontendIcon {
+                        bottom: 10px;
+                    }
                 }
             }
         }
@@ -539,12 +550,6 @@ body {
             position: absolute;
             z-index: -10;;
         }
-    }
-
-    .video {
-        width: 1319px;
-        height: 742px;
-        background-color: #fff;
     }
 }
 
@@ -786,13 +791,7 @@ body {
 
                         h6 {
                             font-weight: 500;
-                        }
-
-                        p {
-                            margin-top: 8px;
-                            font-weight: 500;
-                            font-size: 12px;
-                            color: rgba($color: #000, $alpha: 0.6);
+                            color: rgba($color: #000, $alpha: 1);
                         }
                     }
 
