@@ -421,6 +421,7 @@ body {
   }
   .character .nodeDeveloper img {
     width: 50%;
+    margin-left: 25%;
   }
 }
 
@@ -1082,7 +1083,7 @@ body {
 @media only screen and (max-width: 804px) {
   .information__top h2 {
     font-size: 36px;
-    min-width: 200px;
+    min-width: 100px;
   }
 }
 
@@ -1260,6 +1261,7 @@ body {
   background-color: #4003CA;
   font-weight: 700;
   margin-top: 100px;
+  padding: 0;
 }
 
 @media only screen and (max-width: 1620px) {

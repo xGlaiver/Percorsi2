@@ -300,6 +300,7 @@ body {
 
             img {
                 width: 50%;
+                margin-left: 25%;
             }         
         }
     }
@@ -1017,6 +1018,7 @@ body {
     background-color: #4003CA;
     font-weight: 700;
     margin-top: 100px;
+    padding: 0;
 
     @include mq1620 {
         margin-top: 100px;
